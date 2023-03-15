@@ -1,0 +1,11 @@
+.root {
+  margin: 0 auto;
+}
+.root h2 {
+  text-align: center;
+}
+.root .wrapper {
+  max-width: 900px;
+  height: 400px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
