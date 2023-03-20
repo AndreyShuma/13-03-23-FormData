@@ -16,4 +16,26 @@
 
         }
     }
+    .alert {
+        font-size: 70px;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        color: blue;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        background-color: rgba($color: #95c1df, $alpha: 0.3);
+        // text-align: center;
+
+    }
+    .alert_div {
+        position: relative;
+        top: 35%;
+        left: 15%;
+    }
 }
+
