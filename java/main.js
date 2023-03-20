@@ -32,11 +32,12 @@ const render3 = () => {
     wrapper.innerHTML += imgHole;
 };
 
+//  Визиваємо функції
 render1();
 render2();
 render3();
 
-
+//  навішуємо подію на блок wrapper
 wrapper.addEventListener('click', (event) => {
     console.dir(event);
     if( event.target.alt != 'photo cat') {return};
@@ -91,7 +92,8 @@ wrapper.addEventListener('click', (event) => {
         catX = 50;
         catY = 50;
     };
-    
+
+    //Визиваємо функці
     render1();
     render2();
     render3();
@@ -100,7 +102,7 @@ wrapper.addEventListener('click', (event) => {
     // !Кіт дійшов до нірки ти виграв
     if( ((catX+50) >= catX_3) && ( (catX_3+60) >= catX) && ((catY+40) >= catY_3) && ( (catY_3+50) >= catY) )  {
         console.log("Привіт нірка!!!!!!!!!!!!!!!!");
-        let alert = `<div class="alert"> <div class="alert_div">Ти Виграв!!!! Молодець А ВІКА дурбецело ;)))</div> </div>`;
+        let alert = `<div class="alert"> <div class="alert_div">Ти Виграв!!!! Молодець ;)))</div> </div>`;
         wrapper.innerHTML += alert;
     };
 
